@@ -19,5 +19,8 @@ Options:
 
 * Sort - sorts shapes first by number of hexagons and then by their average x/y ratio of each hexagon.
 
+<br> <br> <br>
 
+![image](screens/screen 0.png)
 
+![image](screens/screen 1.png)
