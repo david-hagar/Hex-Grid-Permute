@@ -125,7 +125,7 @@ public class GridSet
 	{
 		int level = 4;
 		boolean lastOnly = false;
-		boolean enableBoarder = false;
+		boolean enableBorder = false;
 		boolean showNumber = true;
 		boolean sort = false;
 	}

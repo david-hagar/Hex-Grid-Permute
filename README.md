@@ -11,7 +11,7 @@ shapes from the same parent next to each other in the list.
 
 Options:
 
-* Enable Boarder - draws a box around each shape.
+* Enable Border - draws a box around each shape.
 
 * Last Level Only - Only draws the last set of hexagon shapes with the largest number of hexagons.
 

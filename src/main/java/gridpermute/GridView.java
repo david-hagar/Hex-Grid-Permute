@@ -95,14 +95,14 @@ public class GridView extends JPanel implements Printable
 
 		g.setStroke(new BasicStroke((float) (1 / scale)));
 
-		boolean enableBoader = gridSet.settings.enableBoarder;
+		boolean enableBorder = gridSet.settings.enableBorder;
 
 		for (Grid grid : gridSet.renderList)
 		{
 			g.setTransform(t);
 			g.translate(x, y);
 			g.scale(scale, scale);
-			if (enableBoader)
+			if (enableBorder)
 				g.draw(new Rectangle2D.Float(0, 0, max, max));
 
 			grid.render(g);

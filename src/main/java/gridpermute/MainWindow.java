@@ -75,7 +75,7 @@ public class MainWindow extends javax.swing.JFrame {
         levelTextField = new javax.swing.JTextField();
         plusButton = new javax.swing.JButton();
         minusButton = new javax.swing.JButton();
-        enableBoarderCheckBox = new javax.swing.JCheckBox();
+        enableBorderCheckBox = new javax.swing.JCheckBox();
         lastLevelCheckBox = new javax.swing.JCheckBox();
         showNumberCheckBox = new javax.swing.JCheckBox();
         sortCheckBox = new javax.swing.JCheckBox();
@@ -125,10 +125,10 @@ public class MainWindow extends javax.swing.JFrame {
 
         jPanel2.add(jPanel4);
 
-        enableBoarderCheckBox.setText("Enable Boarder");
-        enableBoarderCheckBox.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        enableBoarderCheckBox.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        jPanel2.add(enableBoarderCheckBox);
+        enableBorderCheckBox.setText("Enable Border");
+        enableBorderCheckBox.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        enableBorderCheckBox.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        jPanel2.add(enableBorderCheckBox);
 
         lastLevelCheckBox.setText("Last Level Only");
         lastLevelCheckBox.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
@@ -235,7 +235,7 @@ public class MainWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox enableBoarderCheckBox;
+    private javax.swing.JCheckBox enableBorderCheckBox;
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu2;
@@ -260,7 +260,7 @@ public class MainWindow extends javax.swing.JFrame {
         Settings s = gridSet.settings;
 
         s.level = Integer.parseInt(levelTextField.getText());
-        s.enableBoarder = enableBoarderCheckBox.isSelected();
+        s.enableBorder = enableBorderCheckBox.isSelected();
         s.lastOnly = lastLevelCheckBox.isSelected();
         s.showNumber = showNumberCheckBox.isSelected();
         s.sort = sortCheckBox.isSelected();
@@ -271,7 +271,7 @@ public class MainWindow extends javax.swing.JFrame {
         Settings s = gridSet.settings;
 
         levelTextField.setText(Integer.toString(s.level));
-        enableBoarderCheckBox.setSelected(s.enableBoarder);
+        enableBorderCheckBox.setSelected(s.enableBorder);
         lastLevelCheckBox.setSelected(s.lastOnly);
         showNumberCheckBox.setSelected(s.showNumber);
         sortCheckBox.setSelected(s.sort);
